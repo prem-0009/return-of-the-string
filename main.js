@@ -3,7 +3,6 @@
  *******************/
 function yell(str){
   return str+'!';
- console.log(str) 
 }
 
 function getFirstCharacter(str){
@@ -31,19 +30,11 @@ function yellLouder(str){
 }
 
 function getInitials(str){
-  const splitstr=str.split(" ");
-  const first=splitstr[0][0].toUpperCase();
-  
-  const last=splitstr.slice(-2)[0][0].toUpperCase();
-  
-  return first+'.'+last+'.'
-  
+  return (str[0]+'.'+str[str.indexOf(' ')+1]+'.').toUpperCase()
 }
 
- 
 
 
-getInitials('prem','sherpa')
 
 /********************************************************************
  * THIS CODE IS FOR INTERNAL USE ONLY. DON'T CHANGE ANYTHING BELOW! *
